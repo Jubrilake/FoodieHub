@@ -429,7 +429,7 @@
         <div class="contact-formap">
           <div data-aos="fade-right" class="contact-map"></div>
           <div data-aos="fade-left" class="contact-form">
-            <form action="process.php" class="form">
+            <form name="contact" method="POST" data-netlify="true" class="form">
               <div class="form-group">
                 <input
                   type="text"
@@ -488,7 +488,12 @@
             </p>
           </div>
         </div>
-        <form class="reservation-form">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="reservation-form"
+        >
           <div class="reservation-date">
             <input class="form-input" type="date" name="date" />
           </div>
